@@ -102,5 +102,5 @@ npm run dev
 - Multi-currency Support: Support for international logistics and pricing.
 
 ## Author
-Saksham Khanna
-GitHub: [Saksham-Khanna](https://github.com/Saksham-Khanna)
+Sakshamm Vipul Khanna
+GitHub: [Sakshamm-Khanna](https://github.com/Saksham-Khanna)
