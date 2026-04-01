@@ -10,8 +10,13 @@ const getHeaders = () => {
 
 const handleResponse = async (response) => {
   if (!response.ok) {
-    const error = await response.json().catch(() => ({ error: 'An unexpected error occurred' }));
-    throw { response: { data: error } };
+    let errorData;
+    try {
+      errorData = await response.json();
+    } catch (e) {
+      errorData = { error: `Server error: ${response.status} ${response.statusText}` };
+    }
+    throw { response: { data: errorData } };
   }
   return response.json();
 };

@@ -10,6 +10,11 @@ const router = express.Router();
 // @access  Public
 router.post('/register', async (req, res) => {
   const { name, email, password, role } = req.body;
+  console.log(`📝 Register attempt: ${email} (Role: ${role})`);
+
+  if (!name || !email || !password) {
+    return res.status(400).json({ error: 'Please provide all details' });
+  }
 
   try {
     // Validate role
