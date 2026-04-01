@@ -21,11 +21,6 @@ LogiTrack is a comprehensive full-stack logistics solution designed to streamlin
 - Real-time: Socket.io
 - State Management: React Context API
 
-## Screenshots
-[Add Dashboard Overview Screenshot Here]
-[Add Tracking Page Screenshot Here]
-[Add Shipment Management Screenshot Here]
-
 ## Installation and Setup
 
 ### Prerequisites
