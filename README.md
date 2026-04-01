@@ -13,7 +13,7 @@ LogiTrack is a comprehensive full-stack logistics solution designed to streamlin
 - Advanced History & Filters: Searchable audit trail of all previous shipments with status-based filtering.
 - Secure Authentication: JWT-based authentication system with protected routing and role verification.
 - Predictive Analytics: Integrated ETA engine for estimating delivery durations based on distance and operational variables.
-
+  
 ## Tech Stack
 - Frontend: React.js (Vite), Tailwind CSS (v4), Lucide Icons
 - Backend: Node.js, Express.js
