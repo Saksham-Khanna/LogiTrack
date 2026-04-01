@@ -95,8 +95,17 @@ mongoose.connect(MONGODB_URI)
     });
   })
   .catch((err) => {
-    console.error('❌ MongoDB connection error:', err.message);
-    process.exit(1);
+    console.error('❌ CRITICAL: MongoDB connection error:', err.message);
+    console.error('🔎 Please check your MONGODB_URI on Render environment tab');
   });
+
+// Handle unhandled promise rejections
+process.on('unhandledRejection', (err) => {
+  console.log(`❌ Unhandled Rejection: ${err.message}`);
+});
+
+process.on('uncaughtException', (err) => {
+  console.log(`❌ Uncaught Exception: ${err.message}`);
+});
 
 export default app;
