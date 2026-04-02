@@ -118,7 +118,7 @@ export default function RegisterPage() {
                 <User size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted group-focus-within:text-accent transition-colors" />
                 <input
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Enter your full name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="input-field pl-10!"
